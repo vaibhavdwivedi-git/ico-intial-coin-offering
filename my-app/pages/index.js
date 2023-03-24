@@ -27,6 +27,8 @@ export default function Home() {
   const [tokensMinted, setTokensMinted] = useState(zero);
 
   const [isOwner, setIsOwner] = useState(false);
+  
+   const web3ModalRef = useRef();
 
   const getTokensToBeClaimed = async () => {
     try {
